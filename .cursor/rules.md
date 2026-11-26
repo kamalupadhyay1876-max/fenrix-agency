@@ -1,0 +1,1 @@
+Use TypeScript only. Prefer Server Components, isolate client state in small components, use accessible semantic HTML, build mobile-first, keep editable site copy in data/site.ts, avoid any types, preserve reduced-motion support, and keep visual effects performant with CSS before JavaScript.
