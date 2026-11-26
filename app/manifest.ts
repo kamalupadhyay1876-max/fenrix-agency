@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function manifest(): MetadataRoute.Manifest { return { name: "Fenrix Agency", short_name: "Fenrix", description: "AI automation and digital growth for teams building what is next.", start_url: "/", display: "standalone", background_color: "#07080a", theme_color: "#07080a", icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }] }; }

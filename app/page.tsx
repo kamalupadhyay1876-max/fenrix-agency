@@ -1,6 +1,7 @@
 import { Arrow, Button, Logo, SectionHeading } from "@/components/ui";
 import { ContactForm, FAQ, Navbar } from "@/components/interactive";
 import { HeroVisual } from "@/components/hero-visual";
+import { ROICalculator } from "@/components/upgrade";
 import { services, site, testimonials, work } from "@/data/site";
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
     <section className="proof-band"><div className="container stats-grid">{site.stats.map(([number, label]) => <div className="stat" key={label}><strong>{number}</strong><span>{label}</span></div>)}</div></section>
 
     <section className="section-pad" id="services"><div className="container"><SectionHeading eyebrow="What we do" title="Strategy is good. Systems are better." children="We connect the thinking, building, and optimising needed to make growth feel less random." /><div className="services-grid">{services.map((service, index) => <article className={`service-card service-${index + 1}`} key={service.number}><div className="card-top"><span className="card-number">{service.number}</span><span className="card-tag">{service.tag}</span></div><div><h3>{service.title}</h3><p>{service.text}</p></div><div className="card-arrow"><Arrow /></div></article>)}</div></div></section>
+
+    <section className="section-pad roi-section"><div className="container"><ROICalculator /></div></section>
 
     <section className="section-pad work-section" id="work"><div className="container"><div className="section-row"><SectionHeading eyebrow="Selected work" title="Proof, not promises." /><a className="text-link" href="#contact">View all projects <Arrow /></a></div><div className="work-grid">{work.map((item) => <article className={`work-card ${item.color}`} key={item.title}><div className="work-art"><div className="art-glow" /><div className="art-grid" /><span className="art-label">{item.type}</span><div className="art-ui"><span /><span /><span /><b>{item.result}</b></div></div><div className="work-info"><div><h3>{item.title}</h3><p>{item.text}</p></div><Arrow /></div></article>)}</div></div></section>
 
@@ -24,6 +27,6 @@ export default function Home() {
 
     <section className="section-pad contact-section" id="contact"><div className="container contact-grid"><div className="contact-copy"><p className="eyebrow">Let&apos;s build smarter</p><h2>Ready to make<br /><span>momentum?</span></h2><p>Book a free strategy call and discover where AI-powered systems can save time, sharpen your message, and create more demand.</p><div className="contact-details"><a href={`mailto:${site.email}`}>{site.email}<Arrow /></a><a href={`tel:${site.phone.replaceAll(" ", "")}`}>{site.phone}<Arrow /></a></div></div><ContactForm /></div></section>
 
-    <footer className="footer"><div className="container footer-top"><div className="footer-brand"><Logo /><p>AI automation and digital growth<br />for teams building what&apos;s next.</p></div><div className="footer-links"><div><span>Explore</span><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a></div><div><span>Connect</span><a href={`mailto:${site.email}`}>Email us</a><a href={`tel:${site.phone.replaceAll(" ", "")}`}>Call Fenrix</a><a href="#contact">Start a project</a></div></div></div><div className="container footer-bottom"><span>© 2026 Fenrix Agency</span><span>Built with intent <b>✦</b></span></div></footer>
+    <footer className="footer"><div className="container footer-top"><div className="footer-brand"><Logo /><p>AI automation and digital growth<br />for teams building what&apos;s next.</p></div><div className="footer-links"><div><span>Explore</span><a href="/services">Services</a><a href="/portfolio">Work</a><a href="/about">About Fenrix</a></div><div><span>Connect</span><a href={`mailto:${site.email}`}>Email us</a><a href={`tel:${site.phone.replaceAll(" ", "")}`}>Call Fenrix</a><a href="/contact">Start a project</a></div><div><span>Legal</span><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></div><div className="container footer-bottom"><span>© 2026 Fenrix Agency</span><span>Built with intent <b>✦</b></span></div></footer>
   </main>;
 }

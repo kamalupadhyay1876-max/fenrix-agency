@@ -17,7 +17,11 @@ Most business copy, services, proof points, testimonials, FAQs, email, and phone
 
 ## Contact form
 
-The form currently provides a polished front-end success state so the site works without external credentials. To connect submissions to email later, replace the submit handler in `components/interactive.tsx` with a Next.js route calling Resend.
+The form now posts to `app/api/contact/route.ts`, validates the visitor payload, and returns a clear loading, error, or success state. The endpoint is intentionally credential-free; connect it to Resend or another mail provider by adding a server-side secret when the delivery inbox is ready.
+
+## Production routes
+
+The site includes dedicated `/services`, `/portfolio`, `/about`, `/contact`, `/privacy`, and `/terms` routes, plus generated `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, and a custom 404 experience.
 
 ## Responsive behavior
 

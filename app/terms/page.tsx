@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { PageShell } from "@/components/site-frame";
+export const metadata: Metadata = { title: "Terms | Fenrix", description: "Fenrix website terms." };
+export default function TermsPage() { return <PageShell><section className="legal-page"><div className="container legal-copy"><p className="eyebrow">Legal</p><h1>Terms of use</h1><p>This website shares general information about Fenrix services. Project scope, timelines, fees, ownership, and responsibilities are agreed in a separate written proposal or contract.</p><h2>Using this website</h2><p>Please use the content for evaluating Fenrix and contacting the team. Do not copy, scrape, or republish the design, copy, or source without permission.</p><h2>Contact</h2><p>Questions about these terms can be sent to kamalupadhyay1876@gmail.com.</p></div></section></PageShell>; }

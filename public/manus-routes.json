@@ -1,1 +1,1 @@
-{"routes":[{"path":"/","title":"Fenrix Agency"}]}
+{"routes":[{"path":"/","title":"Fenrix Agency"},{"path":"/services","title":"Fenrix Services"},{"path":"/portfolio","title":"Fenrix Work"},{"path":"/about","title":"About Fenrix"},{"path":"/contact","title":"Contact Fenrix"},{"path":"/privacy","title":"Fenrix Privacy"},{"path":"/terms","title":"Fenrix Terms"}]}

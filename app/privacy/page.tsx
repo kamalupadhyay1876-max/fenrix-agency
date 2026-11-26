@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { PageShell } from "@/components/site-frame";
+export const metadata: Metadata = { title: "Privacy | Fenrix", description: "Fenrix privacy notice." };
+export default function PrivacyPage() { return <PageShell><section className="legal-page"><div className="container legal-copy"><p className="eyebrow">Legal</p><h1>Privacy notice</h1><p>Fenrix only uses information you share with us to respond to enquiries, scope work, and improve the experience of this website. We do not sell personal information.</p><h2>What we collect</h2><p>When you contact us, we may receive your name, email address, phone number, project details, and the service you select. We keep this information only as long as it is useful for the conversation or required by law.</p><h2>Questions</h2><p>For privacy questions, email kamalupadhyay1876@gmail.com.</p></div></section></PageShell>; }
